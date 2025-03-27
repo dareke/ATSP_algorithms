@@ -4,10 +4,10 @@ My implementation of chosen algorithms to solve travelling salesman problem.
 Each algorithm is written seperately in named file.
 Programs take matrix from output file and works on finding the optimal solution, after finishing stores the result in the output file.
 Result given is: found best cost, found best path, work time, relative and absolute error, best cost divided by optimal cost in percentage.
-### Algorithms
-- Brute force:
-- Nearest neighbor:
-- Random:
+### Algorithms and their implementation
+- Brute force: checks every solution looking for optimal one. Uses next_permutation to generate next solution to check.
+- Nearest neighbor: greedy algorithm, takes the best local cost of next city.
+- Random: generates random solution, repeated until found optimal cost or given time has passed.
 - Branch&Bound algorithms:
 - Tabu search:
 - Ant colony optimisation:
